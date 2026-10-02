@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Bloom Focus",
+    "slug": "bloom-focus",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "backgroundColor": "#F4F2EC",
+    "splash": {
+      "backgroundColor": "#F4F2EC"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bloomfocus.app"
+    },
+    "android": {
+      "package": "com.bloomfocus.app",
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-notifications",
+      "expo-font",
+      "expo-sharing",
+      "expo-status-bar",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Bloom Focus uses your photos so you can set your child's profile picture and share photos or screenshots in private messages.",
+          "cameraPermission": "Bloom Focus uses the camera so you can take your child's profile picture or a photo for a private message."
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Bloom Focus uses the microphone so you can record voice notes in private messages."
+        }
+      ]
+    ]
+  }
+}
